@@ -1,6 +1,6 @@
 const fontFamilies = {
-  primary: 'Verdana, Geneva, Tahoma, sans-serif',
-  secondary: "'Source Sans Pro', sans-serif",
+  primary: 'Arial',
+  secondary: "'Open Sans', sans-serif",
 };
 
 export default fontFamilies;

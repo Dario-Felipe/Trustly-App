@@ -1,9 +1,9 @@
-const white = '#FFFFFF';
-const dark = '#000000';
+const gray = '#F1F1F1';
+const green = '#6B8067';
 
 const colors = {
-  white,
-  dark,
+  gray,
+  green,
 };
 
 export default colors;
