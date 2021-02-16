@@ -1,4 +1,4 @@
-const gray = '#F1F1F1';
+const gray = '#F6F6F6';
 const green = '#6B8067';
 
 const colors = {

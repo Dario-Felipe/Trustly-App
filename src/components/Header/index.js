@@ -1,8 +1,25 @@
 import React from 'react';
+import * as S from './style';
+import Avatar from '../../images/UserAvatar/Avatar.svg';
+import ButtonReturn from '../ButtonReturn/index';
 
-const Header = () => (
+const Header = ({ store }) => (
   <>
-    <h1>Header bem aqui!</h1>
+    <S.SectionHeader>
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-12">
+            <S.HeaderContent>
+              <img src={Avatar} alt="UserAvatar" />
+              <S.HeaderContentTitle>
+                {store ? 'Checkout' : 'Sneakers'}
+              </S.HeaderContentTitle>
+              <ButtonReturn />
+            </S.HeaderContent>
+          </div>
+        </div>
+      </div>
+    </S.SectionHeader>
   </>
 );
 
