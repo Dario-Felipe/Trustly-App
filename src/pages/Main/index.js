@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Header from '../../components/Header';
 import Api from '../../service/api';
+import Header from '../../components/Header';
+import SearchInput from '../../components/SearchInput';
 
 const Main = () => {
   const [products, setProducts] = useState([]);
@@ -19,6 +20,7 @@ const Main = () => {
   return (
     <>
       <Header />
+      <SearchInput />
     </>
   );
 };
