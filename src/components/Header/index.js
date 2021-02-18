@@ -14,7 +14,7 @@ const Header = ({ store }) => (
               <S.HeaderContentTitle>
                 {store ? 'Checkout' : 'Sneakers'}
               </S.HeaderContentTitle>
-              <ButtonReturn />
+              <ButtonReturn view={store} />
             </S.HeaderContent>
           </div>
         </div>
