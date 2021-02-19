@@ -36,6 +36,14 @@ export const ProductInfoContent = styled.div`
       height: 20px;
     }
   }
+
+  ${media.lg} {
+    padding: 30px;
+
+    a {
+      display: none;
+    }
+  }
 `;
 
 export const ProductInfoDescription = styled.div`
@@ -56,10 +64,34 @@ export const ProductInfoDescription = styled.div`
       height: 150px;
     }
   }
+
+  ${media.lg} {
+    img {
+      display: none;
+    }
+  }
 `;
 
 export const ProductInfoDescriptionText = styled.div`
   margin: 0 0 0 20px;
+  display: flex;
+  flex-direction: column;
+
+  ${media.sm} {
+    margin: 0;
+  }
+
+  ${media.lg} {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+`;
+
+export const ProductInfoDescriptionTextTitle = styled.div`
+  h3 {
+    display: none;
+  }
 
   h4 {
     font-family: ${fontFamilies.secondary};
@@ -67,14 +99,33 @@ export const ProductInfoDescriptionText = styled.div`
     margin-bottom: 5px;
   }
 
-  h5,
   p {
+    color: #a5a5a5;
     font-family: ${fontFamilies.primary};
     font-size: ${fontSizes.small}px;
   }
 
-  p {
-    color: #a5a5a5;
+  ${media.lg} {
+    h3 {
+      display: block;
+      font-family: ${fontFamilies.secondary};
+      font-size: ${fontSizes.large}px;
+    }
+
+    h4 {
+      font-size: ${fontSizes.medium}px;
+    }
+
+    p {
+      width: 60%;
+    }
+  }
+`;
+
+export const ProductInfoDescriptionTextDelivey = styled.div`
+  h5 {
+    font-family: ${fontFamilies.primary};
+    font-size: ${fontSizes.small}px;
   }
 
   ul {
@@ -89,8 +140,12 @@ export const ProductInfoDescriptionText = styled.div`
     }
   }
 
-  ${media.sm} {
-    margin: 0;
+  ${media.lg} {
+    margin-right: 25px;
+
+    h5 {
+      font-size: ${fontSizes.large}px;
+    }
   }
 `;
 
@@ -102,6 +157,10 @@ export const ProductInfoPrice = styled.div`
 
   ${media.sm} {
     justify-content: space-around;
+  }
+
+  ${media.lg} {
+    justify-content: flex-end;
   }
 `;
 
@@ -118,6 +177,13 @@ export const ProductInfoPriceText = styled.div`
     font-size: ${fontSizes.medium}px;
     color: #a5a5a5;
   }
+
+  ${media.lg} {
+    h5,
+    p {
+      font-size: ${fontSizes.small}px;
+    }
+  }
 `;
 
 export const ProductInfoPriceNumber = styled.div`
@@ -125,5 +191,12 @@ export const ProductInfoPriceNumber = styled.div`
     font-family: ${fontFamilies.secondary};
     font-size: ${fontSizes.xxxlarge}px;
     margin-right: 20px;
+  }
+
+  ${media.lg} {
+    span {
+      margin-right: 0;
+      margin-left: 20px;
+    }
   }
 `;
