@@ -24,7 +24,7 @@ const ProductInfo = ({ id }) => {
       <S.SectionProductInfo>
         <div className="container">
           <div className="row">
-            <div className="col-12">
+            <div className="col-12 col-lg-7">
               <h3>Checkout</h3>
               <S.ProductInfoContent>
                 <Link to="/">
@@ -33,16 +33,21 @@ const ProductInfo = ({ id }) => {
                 <S.ProductInfoDescription>
                   <img src={thumbnailURL} alt={description} />
                   <S.ProductInfoDescriptionText>
-                    <h4>{description}</h4>
-                    <p>
-                      x 1, {color}, Size 41 Item #{id}
-                    </p>
-                    <h5>Delivery details</h5>
-                    <ul>
-                      <li>John Smith</li>
-                      <li>Phone no: 01312428200</li>
-                      <li>Address: Redwood City, 2000</li>
-                    </ul>
+                    <S.ProductInfoDescriptionTextTitle>
+                      <h3>Cart Total</h3>
+                      <h4>{description}</h4>
+                      <p>
+                        x 1, {color}, Size 41 Item #{id}
+                      </p>
+                    </S.ProductInfoDescriptionTextTitle>
+                    <S.ProductInfoDescriptionTextDelivey>
+                      <h5>Delivery details</h5>
+                      <ul>
+                        <li>John Smith</li>
+                        <li>Phone no: 01312428200</li>
+                        <li>Address: Redwood City, 2000</li>
+                      </ul>
+                    </S.ProductInfoDescriptionTextDelivey>
                   </S.ProductInfoDescriptionText>
                 </S.ProductInfoDescription>
                 <S.ProductInfoPrice>
