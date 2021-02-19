@@ -76,7 +76,6 @@ export const ProductInfoDescriptionText = styled.div`
   margin: 0 0 0 20px;
   display: flex;
   flex-direction: column;
-  width: 100%;
 
   ${media.sm} {
     margin: 0;
@@ -85,6 +84,7 @@ export const ProductInfoDescriptionText = styled.div`
   ${media.lg} {
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
   }
 `;
 
@@ -159,7 +159,7 @@ export const ProductInfoPrice = styled.div`
     justify-content: space-around;
   }
 
-  ${media.sm} {
+  ${media.lg} {
     justify-content: flex-end;
   }
 `;
