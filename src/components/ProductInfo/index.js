@@ -4,6 +4,7 @@ import * as S from './style';
 import Api from '../../service/api';
 import Remove from '../../images/ProductInfo/Remove.svg';
 import ProductImage from '../ProductImage/index';
+import establishData from '../../service/create_transaction';
 
 const ProductInfo = ({ id }) => {
   const [product, setProduct] = useState({});
@@ -17,6 +18,15 @@ const ProductInfo = ({ id }) => {
   useEffect(() => {
     loadProduct();
   }, []);
+
+  const loadEstabilish = ({ price, currency }) => {
+    establishData.amount = `${price}`;
+    establishData.currency = `${currency}`;
+  };
+
+  useEffect(() => {
+    loadEstabilish(product);
+  }, [product]);
 
   const { thumbnailURL, description, price, color, maxresURL } = product;
 
