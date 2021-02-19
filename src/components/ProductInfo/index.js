@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import * as S from './style';
 import Api from '../../service/api';
 import Remove from '../../images/ProductInfo/Remove.svg';
+import ProductImage from '../ProductImage/index';
 
 const ProductInfo = ({ id }) => {
   const [product, setProduct] = useState({});
@@ -17,13 +18,14 @@ const ProductInfo = ({ id }) => {
     loadProduct();
   }, []);
 
-  const { thumbnailURL, description, price, color } = product;
+  const { thumbnailURL, description, price, color, maxresURL } = product;
 
   return (
     <>
       <S.SectionProductInfo>
         <div className="container">
           <div className="row">
+            <ProductImage url={maxresURL} />
             <div className="col-12 col-lg-7">
               <h3>Checkout</h3>
               <S.ProductInfoContent>
