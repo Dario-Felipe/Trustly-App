@@ -9,7 +9,7 @@ const Checkout = () => {
 
   return (
     <>
-      <Header store />
+      <Header view>Checkout</Header>
       <Breadcrumbs />
       <ProductInfo id={id} />
     </>
