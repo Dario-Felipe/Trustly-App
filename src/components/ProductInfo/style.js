@@ -39,6 +39,7 @@ export const ProductInfoContent = styled.div`
 
   ${media.lg} {
     padding: 30px;
+    border-radius: 10px 10px 0 0;
 
     a {
       display: none;
