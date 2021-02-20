@@ -91,7 +91,7 @@ export const ProductPaymentContentPromo = styled.div`
   span {
     color: #9e7d27;
     font-weight: 700;
-    font-size: ${fontSizes.xsmall}px;
+    font-size: ${fontSizes.xxsmall}px;
   }
 
   ${media.lg} {
