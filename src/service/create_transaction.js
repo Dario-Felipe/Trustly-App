@@ -7,7 +7,7 @@ const establishData = {
   amount: String,
   description: 'your@email.here',
   merchantReference: '123456',
-  returnUrl: '#success',
+  returnUrl: String,
   cancelUrl: '#cancel',
 };
 
