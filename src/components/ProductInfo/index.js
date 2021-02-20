@@ -4,6 +4,7 @@ import * as S from './style';
 import Api from '../../service/api';
 import Remove from '../../images/ProductInfo/Remove.svg';
 import ProductImage from '../ProductImage/index';
+import ProductPayment from '../ProductPayment';
 import establishData from '../../service/create_transaction';
 
 const ProductInfo = ({ id }) => {
@@ -72,6 +73,7 @@ const ProductInfo = ({ id }) => {
                   </S.ProductInfoPriceNumber>
                 </S.ProductInfoPrice>
               </S.ProductInfoContent>
+              <ProductPayment />
             </div>
           </div>
         </div>
