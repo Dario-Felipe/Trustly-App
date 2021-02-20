@@ -5,7 +5,7 @@ import ProductList from '../../components/ProductsList';
 
 const Main = () => (
   <>
-    <Header home />
+    <Header>Sneakers</Header>
     <SearchInput />
     <ProductList />
   </>

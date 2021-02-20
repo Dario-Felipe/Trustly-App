@@ -4,7 +4,7 @@ import fontFamilies from '../../tokens/font-families';
 import fontSizes from '../../tokens/font-sizes';
 
 export const ButtonReturnContent = styled.div`
-  display: ${(props) => (props.view || props.confirm ? 'block' : 'none')};
+  display: ${(props) => (props.view ? 'block' : 'none')};
 
   a {
     width: 100%;

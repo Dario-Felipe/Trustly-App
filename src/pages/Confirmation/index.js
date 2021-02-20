@@ -3,7 +3,7 @@ import Header from '../../components/Header';
 
 const Confirmation = () => (
   <>
-    <Header confirmPay />
+    <Header view>Review and confirmation</Header>
   </>
 );
 

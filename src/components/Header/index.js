@@ -3,7 +3,7 @@ import * as S from './style';
 import Avatar from '../../images/UserAvatar/Avatar.svg';
 import ButtonReturn from '../ButtonReturn/index';
 
-const Header = ({ home, store, confirmPay }) => (
+const Header = ({ view, children }) => (
   <>
     <S.SectionHeader>
       <div className="container-fluid">
@@ -11,12 +11,8 @@ const Header = ({ home, store, confirmPay }) => (
           <div className="col-12">
             <S.HeaderContent>
               <img src={Avatar} alt="UserAvatar" />
-              <S.HeaderContentTitle>
-                {home ? 'Sneakers' : ''}
-                {store ? 'Checkout' : ''}
-                {confirmPay ? 'Review and confirmation' : ''}
-              </S.HeaderContentTitle>
-              <ButtonReturn view={store} confirm={confirmPay} />
+              <S.HeaderContentTitle>{children}</S.HeaderContentTitle>
+              <ButtonReturn view={view} />
             </S.HeaderContent>
           </div>
         </div>
