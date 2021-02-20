@@ -20,7 +20,8 @@ const ProductInfo = ({ id }) => {
     loadProduct();
   }, []);
 
-  const loadEstabilish = ({ price, currency }) => {
+  const loadEstabilish = ({ price, currency, idLoad = id }) => {
+    establishData.returnUrl = `/confirmation/${idLoad}#success`;
     establishData.amount = `${price}`;
     establishData.currency = `${currency}`;
   };
