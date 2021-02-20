@@ -3,6 +3,7 @@ import * as S from './style';
 import OnlineBank from '../../images/ProductPayment/OnlineBank.svg';
 import CardPay from '../../images/ProductPayment/CardPay.svg';
 import ApplePay from '../../images/ProductPayment/ApplePay.svg';
+import ButtonPayment from '../ButtonPayment';
 
 const ProductPayment = () => (
   <>
@@ -31,6 +32,7 @@ const ProductPayment = () => (
           <img src={ApplePay} alt="OnlineBanking" />
         </S.ProductPaymentContentButton>
       </S.ProductPaymentContent>
+      <ButtonPayment />
     </S.SectionProductPayment>
   </>
 );
