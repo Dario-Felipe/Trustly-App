@@ -1,9 +1,12 @@
+/* eslint-disable no-undef */
 import React from 'react';
 import * as S from './style';
 import OnlineBank from '../../images/ProductPayment/OnlineBank.svg';
 import CardPay from '../../images/ProductPayment/CardPay.svg';
 import ApplePay from '../../images/ProductPayment/ApplePay.svg';
-import ButtonPayment from '../ButtonPayment';
+import Button from '../Button';
+import establishData from '../../service/create_transaction';
+import '../../service/add_listener';
 
 const ProductPayment = () => (
   <>
@@ -32,7 +35,9 @@ const ProductPayment = () => (
           <img src={ApplePay} alt="OnlineBanking" />
         </S.ProductPaymentContentButton>
       </S.ProductPaymentContent>
-      <ButtonPayment />
+      <Button handle={() => PayWithMyBank.establish(establishData)}>
+        Continue
+      </Button>
     </S.SectionProductPayment>
   </>
 );

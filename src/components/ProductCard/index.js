@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from './style';
-import ButtonCard from '../ButtonCard';
+import Button from '../Button';
 
 const ProductCard = ({ id, name, thumb, price }) => (
   <>
@@ -27,7 +27,9 @@ const ProductCard = ({ id, name, thumb, price }) => (
             <span>$</span>
             {price}
           </S.CardPrice>
-          <ButtonCard id={id} />
+          <Button id={id} url={`/checkout/${id}`}>
+            Add to cart
+          </Button>
         </S.Card>
       </S.CardContainer>
     </div>

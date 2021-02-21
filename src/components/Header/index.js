@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from './style';
 import Avatar from '../../images/UserAvatar/Avatar.svg';
-import ButtonReturn from '../ButtonReturn/index';
+import Button from '../Button';
 
 const Header = ({ view, children }) => (
   <>
@@ -12,7 +12,7 @@ const Header = ({ view, children }) => (
             <S.HeaderContent>
               <img src={Avatar} alt="UserAvatar" />
               <S.HeaderContentTitle>{children}</S.HeaderContentTitle>
-              <ButtonReturn view={view} />
+              <Button view={view} url="/" back />
             </S.HeaderContent>
           </div>
         </div>
