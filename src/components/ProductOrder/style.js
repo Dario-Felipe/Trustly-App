@@ -201,19 +201,20 @@ export const ContentMethod = styled.div`
 `;
 
 export const ContentPrice = styled.div`
-  padding: 0 20px 20px;
+  padding: 0 20px 0;
   background: #f7f7f7;
   border-radius: 0 0 10px 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
   &::before {
     content: '';
     display: block;
-    width: calc(100% - 20px);
+    width: 100%;
     height: 2px;
     background: #d6d6d6;
+  }
+
+  ${media.sm} {
+    padding: 0 20px 20px;
   }
 
   ${media.lg} {
@@ -227,6 +228,7 @@ export const ContentPrice = styled.div`
 
 export const ContentPriceView = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
@@ -243,6 +245,9 @@ export const ContentPriceView = styled.div`
 
   ${media.lg} {
     padding-top: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
     span {
       font-weight: bold;
@@ -251,6 +256,21 @@ export const ContentPriceView = styled.div`
 `;
 
 export const ContentPriceViewText = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  padding-bottom: 20px;
+
+  ${media.sm} {
+    justify-content: space-around;
+    border: none;
+    padding-bottom: 0;
+  }
+`;
+
+export const ContentPriceViewTextTitle = styled.div`
   h5,
   p {
     font-family: ${fontFamilies.secondary};
@@ -270,6 +290,28 @@ export const ContentPriceViewText = styled.div`
   ${media.lg} {
     h5 {
       font-weight: normal;
+    }
+  }
+`;
+
+export const ContentPricePlace = styled.div`
+  padding-top: 30px;
+  height: 100%;
+  background: white;
+
+  a {
+    width: 380.7px;
+  }
+
+  ${media.sm} {
+    padding-top: 0;
+  }
+
+  ${media.lg} {
+    padding-top: 0;
+
+    a {
+      width: 275.7px;
     }
   }
 `;

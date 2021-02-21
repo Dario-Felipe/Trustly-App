@@ -3,6 +3,7 @@ import * as S from './style';
 import Api from '../../service/api';
 import ProductImage from '../ProductImage';
 import BankIMG from '../../images/ProductCheck/BankIMG.svg';
+import Button from '../Button';
 
 const ProductOrder = ({ id }) => {
   const [info, setInfo] = useState({});
@@ -52,10 +53,15 @@ const ProductOrder = ({ id }) => {
                 <S.ContentPrice>
                   <S.ContentPriceView>
                     <S.ContentPriceViewText>
-                      <h5>Total cost</h5>
-                      <p>Delivery included</p>
+                      <S.ContentPriceViewTextTitle>
+                        <h5>Total cost</h5>
+                        <p>Delivery included</p>
+                      </S.ContentPriceViewTextTitle>
+                      <span>${parseFloat(price).toFixed(0)}</span>
                     </S.ContentPriceViewText>
-                    <span>${parseFloat(price).toFixed(0)}</span>
+                    <S.ContentPricePlace>
+                      <Button url="/">Place order</Button>
+                    </S.ContentPricePlace>
                   </S.ContentPriceView>
                 </S.ContentPrice>
               </S.GlobalContent>
