@@ -38,6 +38,8 @@ export const ButtonContent = styled.div`
 
 export const ButtonReturnContent = styled.div`
   display: ${(props) => (props.view ? 'block' : 'none')};
+  position: absolute;
+  left: 0;
 
   a {
     width: 100%;
