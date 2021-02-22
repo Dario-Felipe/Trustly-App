@@ -23,6 +23,7 @@ export const HeaderContent = styled.div`
   align-items: center;
   justify-content: space-between;
   flex-direction: row-reverse;
+  position: relative;
 
   img {
     width: 30px;
