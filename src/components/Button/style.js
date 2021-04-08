@@ -117,4 +117,9 @@ export const ButtonPayment = styled.button`
   ${media.lg} {
     width: 302px;
   }
+
+  &:disabled {
+    background: #c9c9c9;
+    cursor: not-allowed;
+  }
 `;
