@@ -44,15 +44,17 @@ export const ProductPaymentContentButton = styled.button`
   height: 60px;
   padding: 0 20px;
   background: white;
-  /* border: ${(props) => (props.selected ? 'solid 2px #63B55C;' : 'none')}; */
-  border: none;
+  border: solid 2px white;
   border-radius: 10px;
   margin-top: 10px;
   position: relative;
 
   &:first-child {
     margin-top: 0;
-    border: solid 2px #63b55c;
+  }
+
+  &:focus {
+    border-color: #63b55c;
   }
 
   h5 {
